@@ -1,0 +1,10 @@
+This is a test document about the solar system.
+The Sun is a star at the center of the Solar System.
+Mercury is the smallest planet in the Solar System.
+Venus is the second planet from the Sun.
+Mars is often called the "Red Planet".
+Jupiter is the largest planet in the Solar System.
+Saturn has prominent ring system.
+Uranus is an ice giant.
+Neptune is the farthest known planet.
+Pluto is a dwarf planet.
