@@ -1,0 +1,49 @@
+@prefix ex: <http://example.org/solar_system/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:DwarfPlanet a rdfs:Class ;
+    rdfs:subClassOf ex:CelestialBody .
+
+ex:Planet a rdfs:Class ;
+    rdfs:subClassOf ex:CelestialBody .
+
+ex:Star a rdfs:Class ;
+    rdfs:subClassOf ex:CelestialBody .
+
+ex:Jupiter a ex:Planet ;
+    ex:hasAttribute "largest" ;
+    ex:orbits ex:Sun .
+
+ex:Mars a ex:Planet ;
+    ex:hasNickname "Red Planet" ;
+    ex:orbits ex:Sun .
+
+ex:Mercury a ex:Planet ;
+    ex:hasAttribute "smallest" ;
+    ex:orbits ex:Sun .
+
+ex:Neptune a ex:Planet ;
+    ex:hasAttribute "farthest known" ;
+    ex:orbits ex:Sun .
+
+ex:Pluto a ex:DwarfPlanet ;
+    ex:orbits ex:Sun .
+
+ex:Saturn a ex:Planet ;
+    ex:hasFeature "ring system" ;
+    ex:orbits ex:Sun .
+
+ex:Uranus a ex:Planet ;
+    ex:classification "ice giant" ;
+    ex:orbits ex:Sun .
+
+ex:Venus a ex:Planet ;
+    ex:orbits ex:Sun ;
+    ex:orderFromSun 2 .
+
+ex:Solar_System a ex:System .
+
+ex:Sun a ex:Star ;
+    ex:isCenterOf ex:Solar_System .
+
